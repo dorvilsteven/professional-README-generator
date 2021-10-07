@@ -40,19 +40,33 @@ const questions = [
           return false;
         }
       }
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Tell us how to use the product. (Required)',
+        validate: usage => {
+        if (usage) {
+          return true;
+        } else {
+          console.log('Please enter your usage instructions!');
+          return false;
+        }
+      }
     }
 ];
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
 const promptUser = () => {
     return inquirer
         .prompt(questions)
         .catch((error) => {
-            console.log('Please try again.');
+            console.log('Something went wrong, please try again.');
         });
 }
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {}
+
 // TODO: Create a function to initialize app
 function init() {
     promptUser()
