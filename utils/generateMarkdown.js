@@ -16,6 +16,7 @@ function generateMarkdown(data) {
   return `# ${title}
   ## Description 
   ${des}
+  ## Table of Contents
   ## Installation
   ${install}
   ## Usage

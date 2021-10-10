@@ -9,7 +9,7 @@ const questions = [
         type: 'input',
         name: 'projectTitle',
         message: 'What is your project title? (Required)',
-        validate: projectTitle => {
+        validate: (projectTitle) => {
         if (projectTitle) {
           return true;
         } else {
@@ -22,7 +22,7 @@ const questions = [
         type: 'input',
         name: 'description',
         message: 'Please provide a description of your project? (Required)',
-        validate: description => {
+        validate: (description) => {
         if (description) {
           return true;
         } else {
@@ -33,9 +33,22 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'link',
+        message: 'Please provide a link to your application. (Required)',
+        validate: (link) => {
+        if (link) {
+          return true;
+        } else {
+          console.log('Link cannot be left empty!');
+          return false;
+        }
+      }
+    },
+    {
+        type: 'input',
         name: 'installation',
         message: 'Tell us how to install. (Required)',
-        validate: installation => {
+        validate: (installation) => {
         if (installation) {
           return true;
         } else {
@@ -48,7 +61,7 @@ const questions = [
         type: 'input',
         name: 'usage',
         message: 'Tell us how to use the product. (Required)',
-        validate: usage => {
+        validate: (usage) => {
         if (usage) {
           return true;
         } else {
@@ -66,9 +79,6 @@ const promptUser = () => {
             console.log('Something went wrong, please try again.');
         });
 }
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {

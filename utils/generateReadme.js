@@ -1,3 +1,4 @@
+// TODO: Create a function to write README file
 const fs = require('fs');
 const { resolve } = require('path');
 
