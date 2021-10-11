@@ -1,27 +1,26 @@
 # kitchen sink chef
-  undefined
-
-  ## Description 
-  Hello home cooks! Are you tired of picking a recipe only to realize you are missing all of the ingredients? The application that we have allows you to search for recipes using the ingredients you already have in your pantry so you can avoid making yet another trip to the grocery store. Kitchen Sink Chef allows its users to type in as many ingredients as you want to find the recipe of your choice. You can also choose a recipe from a variety of cuisine types of your choice. Happy Cooking!
+  ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 
   ## Table of Contents
-
+  
+  * Description
   * Installation
   * Usage
-  * Credits
-  * License
   * Questions
+  
+  ## Description 
+  search recipes
 
   ## Installation
-  [kitchen sink chef](https://srehmat13.github.io/kitchen-sink-chef/)
+  [kitchen sink chef](https://dorvilsteven.github.io/kitchen-sink-chef/)
   
-  visit our web page on any device
+  visit web page
 
   ## Usage
-  simply type the ingredients you have and search for recipes, or search recipes by cuisine types from all over the world
+  search by ingredients or by cuisine type
 
-  ## License
-  See [License](undefined)
+  ## License 
+See [License](https://opensource.org/licenses/Apache-2.0)
 
   ## Questions
   

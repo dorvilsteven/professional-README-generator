@@ -1,14 +1,15 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
+  const userLicense = license[0];
   if (license) {
-    if (license === 'Apache 2.0') {
+    if (userLicense === 'Apache 2.0') {
       return '![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)'
-    } else if (license === 'Boost') {
+    } else if (userLicense === 'Boost') {
       return '![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)';
-    } else if (license === 'BSD 3-Clause') {
+    } else if (userLicense === 'BSD 3-Clause') {
       return '![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)';
-    } else if (license === 'BSD 2-Clause') {
+    } else if (userLicense === 'BSD 2-Clause') {
       return '![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)';
     }
   } else {
@@ -19,14 +20,15 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
+  const userLicense = license[0];
   if (license) {
-    if (license === 'Apache 2.0') {
+    if (userLicense === 'Apache 2.0') {
       return 'https://opensource.org/licenses/Apache-2.0'
-    } else if (license === 'Boost') {
+    } else if (userLicense === 'Boost') {
       return 'https://www.boost.org/LICENSE_1_0.txt';
-    } else if (license === 'BSD 3-Clause') {
+    } else if (userLicense === 'BSD 3-Clause') {
       return 'https://opensource.org/licenses/BSD-3-Clause';
-    } else if (license === 'BSD 2-Clause') {
+    } else if (userLicense === 'BSD 2-Clause') {
       return 'https://opensource.org/licenses/BSD-2-Clause';
     }
   } else {
@@ -38,7 +40,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license) {
-    return `See [License](${renderLicenseLink(license)})`;
+    return `## License \nSee [License](${renderLicenseLink(license)})`;
   } else {
     return '';
   }
@@ -58,16 +60,15 @@ function generateMarkdown(data) {
   return `# ${title}
   ${renderLicenseBadge(license)}
 
-  ## Description 
-  ${des}
-
   ## Table of Contents
-
+  
+  * Description
   * Installation
   * Usage
-  * Credits
-  * License
   * Questions
+  
+  ## Description 
+  ${des}
 
   ## Installation
   [${title}](${link})
@@ -77,7 +78,6 @@ function generateMarkdown(data) {
   ## Usage
   ${use}
 
-  ## License
   ${renderLicenseSection(license)}
 
   ## Questions
