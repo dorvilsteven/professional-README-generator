@@ -62,10 +62,10 @@ function generateMarkdown(data) {
 
   ## Table of Contents
   
-  * Description
-  * Installation
-  * Usage
-  * Questions
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [Questions](#Questions)
   
   ## Description 
   ${des}
