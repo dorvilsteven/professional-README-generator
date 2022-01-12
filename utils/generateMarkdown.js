@@ -58,13 +58,15 @@ function generateMarkdown(data) {
           license 
         } = data;
   return `# ${title}
-  ${renderLicenseBadge(license)}
+
+  Created by [Github](https://www.github.com/${username})
 
   ## Table of Contents
   
   - [Description](#Description)
   - [Installation](#Installation)
   - [Usage](#Usage)
+  - [License](#License)
   - [Questions](#Questions)
   
   ## Description 
@@ -77,8 +79,9 @@ function generateMarkdown(data) {
 
   ## Usage
   ${use}
-
-  ${renderLicenseSection(license)}
+  
+  ## License
+  [License](https://opensource.org/licenses/MIT)
 
   ## Questions
   

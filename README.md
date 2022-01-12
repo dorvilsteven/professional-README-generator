@@ -19,7 +19,8 @@ Simply clone the respository to your machine and you can run the program by usin
 
 ## Usage
 
-run the command `node index.js` in your command line from the root directory of the application
+Run the command `node index.js` from the root directory of the application to get started and answer the questions in order to create your README.
+Also, [here is a video walkthrough of the application]()
 
 ## Questions
 
