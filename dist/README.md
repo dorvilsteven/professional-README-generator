@@ -1,29 +1,31 @@
-# social-network-api
-  undefined
+# tech-blog-mvc
+
+  Created by [Github](https://www.github.com/dorvilsteven)
 
   ## Table of Contents
   
   - [Description](#Description)
   - [Installation](#Installation)
   - [Usage](#Usage)
+  - [License](#License)
   - [Questions](#Questions)
   
   ## Description 
-  This is a backend model for a simple social network, this api will allow app functionality to create users, and post, users can friend other users and add reactions to post, users can also update and delete their post, friend, and reactions
+  users can sign in and create post and even update and delete post, as well as view other users post, all in one place.
 
   ## Installation
-  [social-network-api](https://github.com/dorvilsteven/social-network-api)
+  [tech-blog-mvc](https://tech-blog-mvc-steven-dorvil.herokuapp.com/)
   
-  `git clone` the project and run `npm i` to install the required packages and the project is ready to use.
+  simply visit the website by clicking the following link, [Tech Blog](https://tech-blog-mvc-steven-dorvil.herokuapp.com/), and get started today.
 
   ## Usage
-  GET PUT POST and DELETE both users and thoughts via the respected /api routes. The routes should be under `/api/users` and `/api/thoughts`.
-
-  ## License 
-See [License](undefined)
+  View Post on the homepage, and when you click on the dash board, you will be prompted to login, or sign up if you dont have an account, and once you ar signed in you can create post.
+  
+  ## License
+  [License](https://opensource.org/licenses/MIT)
 
   ## Questions
   
   [Github](https://www.github.com/dorvilsteven)
   
-  If by any chance you want to reach out directly to me with questions about social-network-api, here's my email, dorvilsteven@gmail.com. Feel free to send any questions, criticisms  my way, please allow at least 24 hours before a response.
+  If by any chance you want to reach out directly to me with questions about tech-blog-mvc, here's my email, dorvilsteven@gmail.com. Feel free to send any questions, criticisms  my way, please allow at least 24 hours before a response.
